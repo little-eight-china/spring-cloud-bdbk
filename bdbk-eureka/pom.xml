@@ -6,11 +6,12 @@
         <groupId>bdbk</groupId>
         <artifactId>bdbk-parent</artifactId>
         <version>0.0.1</version>
-        <relativePath/>
+        <relativePath>../bdbk-parent/pom.xml</relativePath>
     </parent>
 
     <artifactId>bdbk-eureka</artifactId>
     <name>bdbk-eureka</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

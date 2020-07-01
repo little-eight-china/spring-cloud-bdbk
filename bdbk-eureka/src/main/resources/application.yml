@@ -1,2 +1,16 @@
 server:
   port: 8761
+  tomcat:
+    accesslog:
+      enabled: true
+      pattern: '%h %l %u %t \"%r\" %s %b %T(s)'
+      prefix: access
+      directory: logs
+    basedir: .
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false

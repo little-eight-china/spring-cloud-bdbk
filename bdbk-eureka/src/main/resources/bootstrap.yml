@@ -1,0 +1,23 @@
+#############################################
+# 应用、配置中心配置
+#############################################
+spring:
+  application:
+    name: bdbk-eureka
+#############################################
+# 管理端点配置
+#############################################
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health,info,loggers,metrics,hystrix.stream'
+#############################################
+# 日志配置
+#############################################
+logging:
+  pattern:
+    file: '%d{MM-dd HH:mm:ss.SSS} -%5p - [%t] [%file:%line] : %m%n'
+    console: '%d{MM-dd HH:mm:ss.SSS} -%5p - [%t] [%file:%line] : %m%n'
+  file:
+    path: logs
